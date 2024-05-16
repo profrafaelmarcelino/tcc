@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>...::: Hotel Escola - ETEC DE ARAÇATUBA</title>
+	<script type="text/javascript">
+	
+function validacao() {
+    var x = document.forms["cadastro"]["cpf"].value;
+    if (x == "") {
+        alert("É obrigatório informar o cpf do usuário");
+        return false;
+    }
+    var y = document.forms["cadastro"]["nome"].value
+	if (y =="")
+	{
+		alert("É obrigatório informar o nome completo do usuário");
+		return false;
+	}
+	var z = document.forms["cadastro"]["endereco"].value
+	if (z=="")
+	{
+		alert("O endereço do usuário é obrigatório!");
+		return false;
+	}
+	var h = document.forms["cadastro"]["cep"].value
+	if (h=="")
+	{
+		alert("O cep do usuário é obrigatório!");
+		return false;
+	}
+}
+
+
+	</script>
+</head>
+<body>
+<br>
+<center>
+	<br>
+	UNIP DE ARAÇATUBA<br>
+	Cadastro de Usuário
+	<br>
+	<table>
+	<form method="POST" name="cadastro" action="" onsubmit="return validacao()">
+	<tr>
+		<td>Cpf:</td>
+		<td><input type="text" name="cpf" size="" maxlength=""></td>
+	</tr>
+	<tr>
+		<td>Nome:</td>
+		<td><input type="text" name="nome" size="60" maxlength="90"></td>
+	</tr>
+	<tr>
+		<td>Endereço:</td>
+		<td><input type="text" name="endereco" size="60" maxlength="90"></td>
+	</tr>
+	<tr>
+		<td>Cep:</td>
+		<td><input type="text" name="cep" size="" maxlength=""></td>
+	</tr>
+	<tr>
+		<td>Bairro:</td>
+		<td><input type="text" name="bairro" size="" maxlength=""></td>
+	</tr>
+	<tr>
+		<td>Cidade:</td>
+		<td><input type="text" name="cidade" size="" maxlength=""></td>
+	</tr>
+	<tr>
+		<td>Estado:</td>
+		<td><select name="estado">
+			<option value="AM">Amazonas</option>
+			<option value="BA">Bahia</option>
+			<option value="CE">Ceará</option>
+			<option value="SA">Salvador</option>
+			<option value="PE">Pernambuco</option>
+			<option selected="" value="SP">São Paulo</option>
+		</select></td>
+	</tr>
+	<TR>
+		<td>
+			Relacionamento:
+		</td>
+		<td><input type="Checkbox" name="relacionamento">Casado<input type="Checkbox" name="relacionamento">Solteiro</td><br>
+		<td></td>
+	</TR>
+	<tr>
+		<td>Login:</td>
+		<td><input type="text" name="login" size="" maxlength=""></td>
+	</tr>
+	<tr>
+		<td>Senha:</td>
+		<td><input type="text" name="senha" size="" maxlength=""></td>
+	</tr>
+	<tr>
+		<td>Comentário:</td>
+		<td><textarea name="" rows="5" cols="30"></textarea>></td>
+	</tr>
+<tr>	
+	<td></td>
+	<td>
+			<input type="submit" value="Cadastrar">
+			<input type="reset" value="Cancelar">
+		</td></tr>
+		
+	</form>
+	
+</table>
+</center>
+</body>
+</html>
